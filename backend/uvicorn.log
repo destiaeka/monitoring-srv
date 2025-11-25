@@ -1,0 +1,76 @@
+nohup: ignoring input
+INFO:     Started server process [1891834]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:9000 (Press CTRL+C to quit)
+INFO:     175.158.55.50:50250 - "GET /api/latest HTTP/1.1" 200 OK
+INFO:     175.158.55.50:51015 - "GET /api/latest HTTP/1.1" 200 OK
+INFO:     175.158.55.50:51042 - "GET /api/latest HTTP/1.1" 200 OK
+INFO:     175.158.55.50:20788 - "GET /api/latest HTTP/1.1" 200 OK
+INFO:     175.158.55.50:20789 - "GET /api/latest HTTP/1.1" 200 OK
+INFO:     175.158.55.50:20920 - "GET /api/latest HTTP/1.1" 200 OK
+INFO:     192.159.99.180:33632 - "GET / HTTP/1.1" 404 Not Found
+INFO:     175.158.55.50:51162 - "GET /api/latest HTTP/1.1" 200 OK
+WARNING:  Invalid HTTP request received.
+INFO:     175.158.55.50:50199 - "GET /api/latest HTTP/1.1" 200 OK
+INFO:     175.158.55.50:50200 - "GET /api/latest HTTP/1.1" 200 OK
+INFO:     71.6.134.231:41418 - "GET / HTTP/1.1" 404 Not Found
+INFO:     71.6.134.231:38484 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+INFO:     3.131.215.38:50572 - "GET / HTTP/1.1" 404 Not Found
+INFO:     175.158.55.50:50948 - "GET /api/latest HTTP/1.1" 200 OK
+INFO:     175.158.55.50:50956 - "GET /api/latest HTTP/1.1" 200 OK
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+INFO:     175.158.55.50:18961 - "GET /api/latest HTTP/1.1" 200 OK
+INFO:     175.158.55.50:11528 - "GET /api/latest HTTP/1.1" 200 OK
+INFO:     20.168.121.101:53404 - "GET / HTTP/1.1" 404 Not Found
+INFO:     103.203.57.26:58724 - "GET http%3A//clientapi.ipip.net/echo.php?info=20251124124552 HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+INFO:     176.65.149.20:37874 - "GET /index.htm HTTP/1.1" 404 Not Found
+INFO:     176.65.149.20:37852 - "GET / HTTP/1.1" 404 Not Found
+INFO:     66.132.153.122:21546 - "GET / HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+INFO:     66.132.153.122:27792 - "GET / HTTP/1.1" 404 Not Found
+INFO:     66.132.153.122:27796 - "PRI %2A HTTP/2.0" 404 Not Found
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+INFO:     66.132.153.122:35562 - "GET /security.txt HTTP/1.1" 404 Not Found
+INFO:     198.235.24.66:63636 - "GET / HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+INFO:     176.65.149.20:45880 - "GET /index.htm HTTP/1.1" 404 Not Found
+INFO:     176.65.149.20:45896 - "GET / HTTP/1.1" 404 Not Found
+INFO:     175.158.55.50:51131 - "GET /api/latest HTTP/1.1" 200 OK
+INFO:     175.158.55.50:51131 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     149.50.108.114:52262 - "GET /../../../../../../etc/passwd HTTP/1.1" 404 Not Found
+INFO:     175.158.55.50:33522 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     205.210.31.250:65388 - "GET / HTTP/1.1" 404 Not Found
+INFO:     175.158.55.50:33286 - "GET /api/latest HTTP/1.1" 200 OK
+INFO:     175.158.55.50:33286 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     175.158.55.50:33519 - "GET /api/latest HTTP/1.1" 200 OK
+INFO:     175.158.55.50:26185 - "GET /api/latest HTTP/1.1" 200 OK
+INFO:     175.158.55.50:26186 - "GET /api/latest HTTP/1.1" 200 OK
+WARNING:  Invalid HTTP request received.
+INFO:     87.236.176.253:35939 - "GET / HTTP/1.1" 404 Not Found
+INFO:     175.158.55.50:50356 - "GET /api/latest HTTP/1.1" 200 OK
+INFO:     175.158.55.50:50180 - "GET /api/latest HTTP/1.1" 200 OK
+INFO:     175.158.55.50:51083 - "GET /api/latest HTTP/1.1" 200 OK
+INFO:     175.158.55.50:51098 - "GET /api/latest HTTP/1.1" 200 OK
+INFO:     175.158.55.50:26122 - "GET /api/latest HTTP/1.1" 200 OK
+INFO:     175.158.55.50:26205 - "GET /api/latest HTTP/1.1" 200 OK
+WARNING:  Invalid HTTP request received.
+INFO:     175.158.55.50:50236 - "GET /api/latest HTTP/1.1" 200 OK
+INFO:     175.158.55.50:50251 - "GET /api/latest HTTP/1.1" 200 OK
+INFO:     175.158.55.50:58731 - "GET /api/latest HTTP/1.1" 200 OK

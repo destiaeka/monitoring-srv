@@ -1,0 +1,107 @@
+
+> frontend@0.0.0 dev
+> vite --host 0.0.0.0 --port 8080
+
+Port 8080 is in use, trying another one...
+Port 8081 is in use, trying another one...
+Port 8082 is in use, trying another one...
+Port 8083 is in use, trying another one...
+
+  VITE v7.2.4  ready in 1165 ms
+
+  ➜  Local:   http://localhost:8084/
+  ➜  Network: http://103.160.37.103:8084/
+  ➜  Network: http://192.168.100.222:8084/
+  ➜  Network: http://172.17.0.1:8084/
+  ➜  Network: http://10.42.1.0:8084/
+  ➜  Network: http://10.42.1.1:8084/
+
+> frontend@0.0.0 dev
+> vite --host 0.0.0.0 --port 8080
+
+
+  VITE v7.2.4  ready in 1538 ms
+
+  ➜  Local:   http://localhost:8080/
+  ➜  Network: http://103.160.37.103:8080/
+  ➜  Network: http://192.168.100.222:8080/
+  ➜  Network: http://172.17.0.1:8080/
+  ➜  Network: http://10.42.1.0:8080/
+  ➜  Network: http://10.42.1.1:8080/
+10:13:34 PM [vite] (client) Pre-transform error: Failed to resolve import "@/components/ui/card" from "src/App.tsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: /root/monitoring/monitoring-dashboard/frontend/src/App.tsx:2:57
+  2  |  var _s = $RefreshSig$();
+  3  |  import { useEffect, useState } from "react";
+  4  |  import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+     |                                                            ^
+  5  |  import {
+  6  |    LineChart,
+10:13:35 PM [vite] Internal server error: Failed to resolve import "@/components/ui/card" from "src/App.tsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: /root/monitoring/monitoring-dashboard/frontend/src/App.tsx:2:57
+  2  |  var _s = $RefreshSig$();
+  3  |  import { useEffect, useState } from "react";
+  4  |  import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+     |                                                            ^
+  5  |  import {
+  6  |    LineChart,
+      at TransformPluginContext._formatLog (file:///root/monitoring/monitoring-dashboard/frontend/node_modules/vite/dist/node/chunks/config.js:29647:43)
+      at TransformPluginContext.error (file:///root/monitoring/monitoring-dashboard/frontend/node_modules/vite/dist/node/chunks/config.js:29644:14)
+      at normalizeUrl (file:///root/monitoring/monitoring-dashboard/frontend/node_modules/vite/dist/node/chunks/config.js:27767:18)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at async file:///root/monitoring/monitoring-dashboard/frontend/node_modules/vite/dist/node/chunks/config.js:27825:32
+      at async Promise.all (index 2)
+      at async TransformPluginContext.transform (file:///root/monitoring/monitoring-dashboard/frontend/node_modules/vite/dist/node/chunks/config.js:27793:4)
+      at async EnvironmentPluginContainer.transform (file:///root/monitoring/monitoring-dashboard/frontend/node_modules/vite/dist/node/chunks/config.js:29445:14)
+      at async loadAndTransform (file:///root/monitoring/monitoring-dashboard/frontend/node_modules/vite/dist/node/chunks/config.js:23316:26)
+      at async viteTransformMiddleware (file:///root/monitoring/monitoring-dashboard/frontend/node_modules/vite/dist/node/chunks/config.js:25188:20)
+10:13:39 PM [vite] Internal server error: Failed to resolve import "@/components/ui/card" from "src/App.tsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: /root/monitoring/monitoring-dashboard/frontend/src/App.tsx:2:57
+  2  |  var _s = $RefreshSig$();
+  3  |  import { useEffect, useState } from "react";
+  4  |  import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+     |                                                            ^
+  5  |  import {
+  6  |    LineChart,
+      at TransformPluginContext._formatLog (file:///root/monitoring/monitoring-dashboard/frontend/node_modules/vite/dist/node/chunks/config.js:29647:43)
+      at TransformPluginContext.error (file:///root/monitoring/monitoring-dashboard/frontend/node_modules/vite/dist/node/chunks/config.js:29644:14)
+      at normalizeUrl (file:///root/monitoring/monitoring-dashboard/frontend/node_modules/vite/dist/node/chunks/config.js:27767:18)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at async file:///root/monitoring/monitoring-dashboard/frontend/node_modules/vite/dist/node/chunks/config.js:27825:32
+      at async Promise.all (index 2)
+      at async TransformPluginContext.transform (file:///root/monitoring/monitoring-dashboard/frontend/node_modules/vite/dist/node/chunks/config.js:27793:4)
+      at async EnvironmentPluginContainer.transform (file:///root/monitoring/monitoring-dashboard/frontend/node_modules/vite/dist/node/chunks/config.js:29445:14)
+      at async loadAndTransform (file:///root/monitoring/monitoring-dashboard/frontend/node_modules/vite/dist/node/chunks/config.js:23316:26)
+      at async viteTransformMiddleware (file:///root/monitoring/monitoring-dashboard/frontend/node_modules/vite/dist/node/chunks/config.js:25188:20)
+10:13:41 PM [vite] (client) ✨ new dependencies optimized: react-dom/client, recharts
+10:13:41 PM [vite] (client) ✨ optimized dependencies changed. reloading
+10:13:43 PM [vite] (client) Pre-transform error: Failed to resolve import "@/components/ui/card" from "src/App.tsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: /root/monitoring/monitoring-dashboard/frontend/src/App.tsx:2:57
+  2  |  var _s = $RefreshSig$();
+  3  |  import { useEffect, useState } from "react";
+  4  |  import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+     |                                                            ^
+  5  |  import {
+  6  |    LineChart,
+10:13:44 PM [vite] Internal server error: Failed to resolve import "@/components/ui/card" from "src/App.tsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: /root/monitoring/monitoring-dashboard/frontend/src/App.tsx:2:57
+  2  |  var _s = $RefreshSig$();
+  3  |  import { useEffect, useState } from "react";
+  4  |  import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+     |                                                            ^
+  5  |  import {
+  6  |    LineChart,
+      at TransformPluginContext._formatLog (file:///root/monitoring/monitoring-dashboard/frontend/node_modules/vite/dist/node/chunks/config.js:29647:43)
+      at TransformPluginContext.error (file:///root/monitoring/monitoring-dashboard/frontend/node_modules/vite/dist/node/chunks/config.js:29644:14)
+      at normalizeUrl (file:///root/monitoring/monitoring-dashboard/frontend/node_modules/vite/dist/node/chunks/config.js:27767:18)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at async file:///root/monitoring/monitoring-dashboard/frontend/node_modules/vite/dist/node/chunks/config.js:27825:32
+      at async Promise.all (index 2)
+      at async TransformPluginContext.transform (file:///root/monitoring/monitoring-dashboard/frontend/node_modules/vite/dist/node/chunks/config.js:27793:4)
+      at async EnvironmentPluginContainer.transform (file:///root/monitoring/monitoring-dashboard/frontend/node_modules/vite/dist/node/chunks/config.js:29445:14)
+      at async loadAndTransform (file:///root/monitoring/monitoring-dashboard/frontend/node_modules/vite/dist/node/chunks/config.js:23316:26)
+      at async viteTransformMiddleware (file:///root/monitoring/monitoring-dashboard/frontend/node_modules/vite/dist/node/chunks/config.js:25188:20)

@@ -1,0 +1,85 @@
+import { useEffect, useState } from "react";
+import axios from "axios";
+import { Activity, Server, HardDrive } from "lucide-react";
+import { LineChart, Line, XAxis, YAxis, Tooltip, CartesianGrid } from "recharts";
+
+interface Metrics {
+  cpu: number;
+  ram_used: number;
+  ram_total: number;
+  disk_used: number;
+  disk_total: number;
+  timestamp: string;
+}
+
+export default function App() {
+  const [data, setData] = useState<Metrics[]>([]);
+
+  const fetchData = async () => {
+    try {
+      const res = await axios.get("http://IP_BACKEND_KAMU:9000/api/latest"); 
+      setData(res.data);
+    } catch (e) {
+      console.log("Gagal fetch data:", e);
+    }
+  };
+
+  useEffect(() => {
+    fetchData();
+    const interval = setInterval(fetchData, 5000);
+    return () => clearInterval(interval);
+  }, []);
+
+  const last = data[data.length - 1];
+
+  return (
+    <div className="min-h-screen bg-gray-950 text-white p-8">
+      <h1 className="text-3xl font-bold mb-8">Server Monitoring Dashboard</h1>
+
+      {/* Cards */}
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+        <div className="bg-gray-900 p-6 rounded-xl shadow-xl border border-gray-800">
+          <div className="flex items-center gap-3 mb-2">
+            <Activity className="text-blue-400" />
+            <p className="text-lg font-semibold">CPU Usage</p>
+          </div>
+          <p className="text-3xl font-bold">{last?.cpu}%</p>
+        </div>
+
+        <div className="bg-gray-900 p-6 rounded-xl shadow-xl border border-gray-800">
+          <div className="flex items-center gap-3 mb-2">
+            <Server className="text-green-400" />
+            <p className="text-lg font-semibold">RAM Usage</p>
+          </div>
+          <p className="text-3xl font-bold">
+            {last?.ram_used} GB / {last?.ram_total} GB
+          </p>
+        </div>
+
+        <div className="bg-gray-900 p-6 rounded-xl shadow-xl border border-gray-800">
+          <div className="flex items-center gap-3 mb-2">
+            <HardDrive className="text-yellow-400" />
+            <p className="text-lg font-semibold">Disk Usage</p>
+          </div>
+          <p className="text-3xl font-bold">
+            {last?.disk_used} GB / {last?.disk_total} GB
+          </p>
+        </div>
+      </div>
+
+      {/* Chart */}
+      <div className="mt-10 bg-gray-900 p-6 rounded-xl shadow-xl border border-gray-800">
+        <h2 className="text-xl mb-4 font-semibold">CPU Usage Graph</h2>
+        <LineChart width={800} height={300} data={data}>
+          <CartesianGrid stroke="#333" />
+          <XAxis dataKey="timestamp" stroke="#aaa" />
+          <YAxis stroke="#aaa" />
+          <Tooltip />
+          <Line type="monotone" dataKey="cpu" stroke="#00bfff" strokeWidth={2} />
+        </LineChart>
+      </div>
+    </div>
+  );
+}
+
